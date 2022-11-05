@@ -1,5 +1,5 @@
 import React from 'react'
-import { theme } from '../../theme/theme'
+import theme from '../../theme/defaultTheme'
 import { 
   NotificationHeader, 
   NotificationWrapper, 
@@ -80,12 +80,12 @@ const Notifications1 = () => {
     <NotificationInfor theme={theme1}>
       <NotificationInforTop>
         <h5>To’dirilgan forma nomi</h5>
-        <img src={require('./../../images/icon/delete/normal.png')} alt="delete"/>
+        <img src={require('./../../images/icons/icon/delete/normal.png')} alt="delete"/>
       </NotificationInforTop>
       <NotificationInforBottom>
         <span>Siz to'ldirgan shaxsga doir forma qabul qilindi</span>
         <div>
-          <img src={require('./../../images/icon/check.png')} alt="check"/>
+          <img src={require('./../../images/icons/icon/check.png')} alt="check"/>
           <span></span>
         </div>
       </NotificationInforBottom>
@@ -103,7 +103,7 @@ const Notifications2 = () => {
       <NotificationInforBottom>
         <span>Siz to'ldirgan shaxsga doir forma qabul qilindi</span>
         <NotificationStatusWrapper theme={theme2}>
-          <img src={require('./../../images/icon/waiting.png')} alt="check"/>
+          <img src={require('./../../images/icons/icon/waiting.png')} alt="check"/>
           <span>Cancle</span>
         </NotificationStatusWrapper>
       </NotificationInforBottom>
@@ -121,7 +121,7 @@ const Notifications3 = () => {
       <NotificationInforBottom>
         <span>Siz to'ldirgan shaxsga doir forma qabul qilindi</span>
         <NotificationStatusWrapper>
-          <img src={require('./../../images/icon/info/normal.png')} alt="check"/>
+          <img src={require('./../../images/icons/icon/info/normal.png')} alt="check"/>
           <span>Cancle</span>
         </NotificationStatusWrapper>
       </NotificationInforBottom>
@@ -139,7 +139,7 @@ const Notifications4 = () => {
       <NotificationInforBottom>
         <span>Siz to'ldirgan shaxsga doir forma qabul qilindi</span>
         <NotificationStatusWrapper theme={theme3}>
-          <img src={require('./../../images/icon/cancel.png')} alt="check"/>
+          <img src={require('./../../images/icons/icon/cancel.png')} alt="check"/>
           <span>Cancle</span>
         </NotificationStatusWrapper>
       </NotificationInforBottom>
@@ -157,7 +157,7 @@ const Notifications5 = () => {
       <NotificationInforBottom>
         <span>Siz to'ldirgan shaxsga doir forma qabul qilindi</span>
         <NotificationStatusWrapper theme={theme1}>
-          <img src={require('./../../images/icon/check.png')} alt="check"/>
+          <img src={require('./../../images/icons/icon/check.png')} alt="check"/>
           <span>Tasdiqlandi</span>
         </NotificationStatusWrapper>
       </NotificationInforBottom>

@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import OutlinedInput from '@mui/material/OutlinedInput'
-import { theme } from './../../theme/theme'
 
 export const HeaderContainer = styled.div`
     width: 100%;
@@ -47,7 +46,7 @@ export const HeaderNotification = styled.div`
     width: 51px;
     height: 51px;
     border-radius: 50%;
-    background-color: ${theme.lightBlue2};
+    background-color: ${props => props.theme.color.light_blue2};
     margin-left: 22px;
 `;
 
@@ -55,7 +54,7 @@ export const HeaderPersonnel = styled.div`
     width: 263px;
     height: 50px;
     border-radius: 50px;
-    background-color: ${theme.lightBlue2};
+    background-color: ${props => props.theme.color.light_blue2};
     margin-left: 13px;
     display: flex;
     align-items: center;
@@ -66,7 +65,7 @@ export const HeaderPersonnelImg = styled.div`
     width: 46px;
     height: 46px;
     border-radius: 50%;
-    border: 1.5px solid ${theme.lightBlue1};
+    border: 1.5px solid ${props => props.theme.color.light_blue1};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,7 +78,7 @@ export const HeaderPersonnelImg = styled.div`
 
 export const HeaderPersonnelText = styled.div`
     margin-left: 8px;
-    color: ${theme.black};
+    color: ${props => props.theme.color.black};
     p{
         font-style: normal;
         font-weight: 600;

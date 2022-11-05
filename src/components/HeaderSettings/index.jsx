@@ -1,8 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
 import visibility from '../../images/icons/icon/visibility.png'
-import defaultTheme from '../../context/theme_context'
 import {
     HeaderSettingsButton,
     HeaderSettingsText,
@@ -11,7 +10,6 @@ import {
 
 export default function HeaderSettings() {
 
-  let  theme = useContext(defaultTheme);
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -26,11 +24,11 @@ export default function HeaderSettings() {
 
   return (
     <div>
-      <HeaderSettingsButton theme={theme} onClick={handleClick}>
-          <HeaderSettingsImage theme={theme}>
+      <HeaderSettingsButton onClick={handleClick}>
+          <HeaderSettingsImage>
             <img src={visibility} alt="visibility"/>
           </HeaderSettingsImage>
-          <HeaderSettingsText theme={theme}>
+          <HeaderSettingsText>
             Ko'rinish turi
           </HeaderSettingsText>
       </HeaderSettingsButton>

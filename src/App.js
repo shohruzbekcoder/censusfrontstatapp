@@ -1,5 +1,5 @@
 import React from "react"
-import ThemeContext from './context/theme_context'
+// import ThemeContext from './context/theme_context'
 import defaultTheme from './theme/defaultTheme'
 import ResponsiveDrawer from './components/Main';
 import {
@@ -8,10 +8,11 @@ import {
   Route
 } from "react-router-dom";
 import Panel from './components/Panel';
+import { ThemeProvider } from "styled-components";
 
 function App() {
   return (
-    <ThemeContext.Provider value={defaultTheme}>
+    <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
         <Routes>
             <Route path="/" element={<ResponsiveDrawer/>}>
@@ -21,7 +22,7 @@ function App() {
             </Route>
         </Routes>
       </BrowserRouter>
-    </ThemeContext.Provider>
+    </ThemeProvider>
     
   );
 }

@@ -1,12 +1,11 @@
 import styled from 'styled-components'
-import { theme } from './../../theme/theme'
 import IconButton from '@mui/material/IconButton'
 import CloseIcon from '@mui/icons-material/Close';
 
 export const NotificationWrapper = styled.div`
     width: 439px;
     background: #FFFFFF;
-    border: 1px solid ${theme.lightBlue1};
+    border: 1px solid ${props => props.theme.color.light_blue1};
     padding: 30px;
     position: fixed;
     top: 87px;
@@ -24,7 +23,7 @@ export const NotificationHeader = styled.div`
         font-weight: 700;
         font-size: 16px;
         line-height: 150%;
-        color: ${theme.black}
+        color: ${props => props.theme.black}
     }
 `;
 
@@ -37,7 +36,7 @@ export const NotificationInfor = styled.div`
     border-radius: 5px;
     border: 1px solid  ${props => props.theme.border};
     background: ${props => props.theme.background};
-    box-shadow: ${theme.shadow3};
+    box-shadow: ${props => props.theme.color.shadow3};
     padding: 14px 18px 16px 19px;
     margin-bottom: 15px;
 `;
@@ -59,7 +58,7 @@ export const NotificationInforTop = styled.div`
         font-weight: 400;
         font-size: 12px;
         line-height: 150%;
-        color: ${theme.black}
+        color: ${props => props.theme.black}
     }
 `;
 
@@ -83,7 +82,7 @@ export const MyIconButton = styled(IconButton)`
 export const MyCloseIcon = styled(CloseIcon)`
     width: 15px;
     height: 15px;
-    color: ${theme.grey}
+    color: ${props => props.theme.grey}
 `;
 
 export const NotificationStatusWrapper = styled.div`

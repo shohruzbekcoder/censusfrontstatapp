@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import Box from '@mui/material/Box';
 import { Link } from "react-router-dom";
-import { theme } from './../../theme/theme';
 
 export const SidebarWrapper = styled(Box)`
     position: fixed;
@@ -42,7 +41,7 @@ export const ActiveLink = styled(Link)`
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
-    color: ${theme.main.color};
+    color: ${props => props.theme.main_color};
     padding-left: 14px;
     position: relative;
     ::before{
@@ -52,7 +51,7 @@ export const ActiveLink = styled(Link)`
         left: 0;
         width: 3px;
         height: 50px;
-        background-color: ${theme.main.color};
+        background-color: ${props => props.theme.main_color};
         border-radius: 5px 0px 0px 5px;
     }
 `;
@@ -65,6 +64,6 @@ export const UnActiveLink = styled(Link)`
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
-    color: ${theme.main.color};
+    color: ${props => props.theme.main_color};
     padding-left: 14px;
 `;

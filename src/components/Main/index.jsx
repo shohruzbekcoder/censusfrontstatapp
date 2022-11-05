@@ -20,7 +20,7 @@ function ResponsiveDrawer(props) {
         <Header/>
         <MainWrapper takeViewportHeight>
           <Outlet/>
-          <LastNotification/>
+          {/* <LastNotification/> */}
         </MainWrapper>
       </Box>
     </Box>
